@@ -154,6 +154,8 @@ main {
     font-family: "Inter", sans-serif;
 }
 .main-currency-table .currency-table--title {
+    max-width: 300px;
+    margin: 0 auto;
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -250,14 +252,14 @@ main {
     min-width: 320px;
     height: auto;
     padding:  20px 10px;
-    background-color: var(--black);
+    background-color: var(--warm-black);
     
 }
-.main-product-detail > span {
+.main-product-detail .product-detail--batata-logo {
     position: absolute;
     top: -10.5px;
     display: inline-block;
-    width: 38px;
+    width: 40px;
     height: 25px;
     background-image: url("./assets/images/logo.svg");
     background-position: center;
@@ -266,20 +268,22 @@ main {
     align-self: center;
 }
 .main-product-detail .product-detail-title {
+    width: 90%;
     min-width: 288px;
+    margin-top: 50px;
     align-self: center;
-    margin-bottom: 16px;
+    
 }
 .main-product-detail .product-detail-title h2{
-    width: 288px;
+    margin-bottom: 20px;
     font-size: 2.4rem;
-    line-height: 2.7rem;
+    line-height: 2.6rem;
     font-weight: 700;
     color: var(--just-white);
     text-align: center;
 }
 .main-product-detail .product-detail-title p{
-    margin-top: 23px;
+    margin-bottom: 20px;
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 500;
@@ -288,25 +292,28 @@ main {
 }
 
 
-.products-cards-container .product-detail--card {
+.product-detail--card {
+    width: 90%;
     width: 280px;
-    margin: 0 auto;
-    margin-top: 16px;
-    padding: 16px 15px 24px 16px;
-    background-color: var(--warm-black);
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
     border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 
 
 }
 .product-detail--card .product--card-title {
-    margin-top: 12px;
+    margin-top: 15px;
     font-size: 1.8rem;
     line-height: 1.8rem;
     font-weight: 700;
     color: var(--just-white);
 }
 .product-detail--card .product--card-body {
-    margin-top: 12px;
+    margin-top: 15px;
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 500;
@@ -348,4 +355,98 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("./assets/images/bitcoinbaby2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans-title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans-title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans-title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans-container--card {
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recomendado {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plan-info--container {
+    position: relative;
+}
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color: var(--black);
+}
+.plan-card--price span {
+    display: block;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 300;
+    top: 42px;
+    left: 73px;
+   
 }
