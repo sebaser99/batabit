@@ -54,9 +54,9 @@ footer .left ul {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     font-weight: 700;
-    line-height: 2.8rem;
+    line-height: 2.4rem;
 }
 .right img {
     width: 100px;
